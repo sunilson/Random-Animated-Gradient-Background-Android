@@ -41,3 +41,23 @@ animDrawable.start()
 ```
 
 That's it. This can be applied to any view, for example to all views in a Recyclerview (use in onViewAttachedToWindow)
+
+The color and orientation list could look like this for example: 
+
+```
+val COLORS = listOf(
+            Pair(Color.parseColor("#7986CB"), Color.parseColor("#D50000")),
+            Pair(Color.parseColor("#E91E63"), Color.parseColor("#7B1FA2")),
+            Pair(Color.parseColor("#00BCD4"), Color.parseColor("#C0CA33")),
+            Pair(Color.parseColor("#FBC02D"), Color.parseColor("#795548")),
+            Pair(Color.parseColor("#FF5722"), Color.parseColor("#9575CD")),
+            Pair(Color.parseColor("#AD1457"), Color.parseColor("#EA80FC")),
+            Pair(Color.parseColor("#26A69A"), Color.parseColor("#FF6F00")),
+            Pair(Color.parseColor("#8BC34A"), Color.parseColor("#FF8F00")))
+    
+val ORIENTATIONS = listOf(
+            GradientDrawable.Orientation.TL_BR,
+            GradientDrawable.Orientation.BL_TR,
+            GradientDrawable.Orientation.BR_TL,
+            GradientDrawable.Orientation.TR_BL)
+```
