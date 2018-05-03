@@ -1,2 +1,3 @@
-# Animated-Gradient-Background-Android
-An animated background gradient for your Android views
+# 🌈 Animated Gradient Background for Android Views 🌈
+
+
