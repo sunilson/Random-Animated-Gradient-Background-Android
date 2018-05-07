@@ -26,14 +26,14 @@ for(i in 0..2) {
   //Create gradient
   val gradient = GradientDrawable(orientation, colors.toIntArray())
   
-  //Add to animDrawable with random animation duration (maybe between 4000 to 8000 ms would be a good value)
-  animDrawable.addFrame(gradient, randomDuration)
+  //Add to animDrawable with animation duration
+  animDrawable.addFrame(gradient, 4000)
 }
 
 //Apply to View
 view.background = animDrawable
 
-//Start animation
+//Start animation. Enter duration should be half the animation duration
 animDrawable.setEnterFadeDuration(2000)
 animDrawable.setExitFadeDuration(4000)
 animDrawable.start()
