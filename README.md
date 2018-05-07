@@ -2,11 +2,11 @@
 
 To get an animated gradient as a background of any View you just need an AnimationList of GradientDrawable's
 
-##Example
+## Example
 
 TODO
 
-##Code
+## Code
 
 ```
 //Get the view that should get the background
@@ -26,8 +26,8 @@ for(i in 0..2) {
   //Create gradient
   val gradient = GradientDrawable(orientation, colors.toIntArray())
   
-  //Add to animDrawable
-  animDrawable.addFrame(gradient, 4000)
+  //Add to animDrawable with random animation duration (maybe between 4000 to 8000 ms would be a good value)
+  animDrawable.addFrame(gradient, randomDuration)
 }
 
 //Apply to View
