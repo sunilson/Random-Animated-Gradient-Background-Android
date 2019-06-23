@@ -46,14 +46,15 @@ The color and orientation list could look like this for example:
 
 ```
 val COLORS = listOf(
-            Pair(Color.parseColor("#7986CB"), Color.parseColor("#D50000")),
-            Pair(Color.parseColor("#E91E63"), Color.parseColor("#7B1FA2")),
-            Pair(Color.parseColor("#00BCD4"), Color.parseColor("#C0CA33")),
-            Pair(Color.parseColor("#FBC02D"), Color.parseColor("#795548")),
-            Pair(Color.parseColor("#FF5722"), Color.parseColor("#9575CD")),
-            Pair(Color.parseColor("#AD1457"), Color.parseColor("#EA80FC")),
-            Pair(Color.parseColor("#26A69A"), Color.parseColor("#FF6F00")),
-            Pair(Color.parseColor("#8BC34A"), Color.parseColor("#FF8F00")))
+            Color.parseColor("#7986CB") to Color.parseColor("#D50000"),
+            Color.parseColor("#E91E63") to Color.parseColor("#7B1FA2"),
+            Color.parseColor("#00BCD4") to Color.parseColor("#C0CA33"),
+            Color.parseColor("#FBC02D") to Color.parseColor("#795548"),
+            Color.parseColor("#FF5722") to Color.parseColor("#9575CD"),
+            Color.parseColor("#AD1457") to Color.parseColor("#EA80FC"),
+            Color.parseColor("#26A69A") to Color.parseColor("#FF6F00"),
+            Color.parseColor("#8BC34A") to Color.parseColor("#FF8F00")
+        )
     
 val ORIENTATIONS = listOf(
             GradientDrawable.Orientation.TL_BR,
